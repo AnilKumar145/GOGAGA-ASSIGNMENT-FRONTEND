@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+/* General Styles */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.navbar-brand {
+    padding-left: 15;
+}
+
+.navbar-nav {
+    color: black;
+    font-weight: bold;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Background Section Styles */
+.bg-image-content {
+    background-image: url('https://res.cloudinary.com/anilkumarsala-ccbp-tech/image/upload/v1723824652/twzpklyjb83naf4c4pws.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    opacity: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    /* Use a modern, clean font */
+    font-size: 2.5rem;
+    /* Adjust size as needed */
+    font-weight: 700;
+    /* Bold font weight */
+    color: #ff5733;
+    /* Vibrant color for the logo text */
+    text-transform: uppercase;
+    /* Uppercase text for a bold look */
+    letter-spacing: 2px;
+    /* Increase spacing between letters */
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-brand::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 40px;
+
+    /* Gradient background */
+    z-index: -1;
+    /* Place behind the text */
+    transform: skewX(-20deg);
+    opacity: 0.7;
+}
+
+/* Add a subtle shadow to the text */
+
+.navbar-brand {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .logo-text {
+        font-size: 2rem;
+        /* Smaller size on mobile */
+        letter-spacing: 1px;
+        /* Adjust letter spacing */
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+/* Form Container Styles */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    /* Add border to the form container */
+}
+
+/* Form Styles */
+label.form-label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+input.form-control {
+    border: 1px solid #000;
+    /* Slight black outline */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Button Styles */
+button.btn-dark {
+    background-color: black;
+    border: 1px solid #000;
+    /* Slight black outline */
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    /* Adjust padding for smaller button */
+    border-radius: 4px;
+    width: auto;
+    /* Adjust width to fit content */
+}
+
+button.btn-dark i {
+    font-size: 16px;
+    /* Adjust icon size */
+}
+
+/* Moon Symbol */
+.col-md-1.text-center span {
+    font-size: 24px;
+    display: block;
+    margin-top: 35px;
+    /* Adjust this value to vertically align the moon symbol */
+    color: white;
+}
+
+/* Star Rating Styles */
+
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .bg-image-content {
+        padding: 40px 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    .col-md-3 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .star-rating label {
+        font-size: 20px;
+        /* Smaller size on mobile */
+    }
+
+    .star-rating .rating-number {
+        font-size: 18px;
+        /* Smaller size on mobile */
+    }
+}
+
+
+/* Button Styles */
+button.btn-dark {
+    background-color: black;
+    border: 1px solid #000;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    /* Adjust padding */
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 50px;
+    /* Decrease width */
+    text-align: center;
+    /* Center the icon */
+}
+
+button.btn-dark i {
+    font-size: 18px;
+    /* Adjust icon size */
+}
+
+/* Hide contact icon on small screens */
+@media (max-width: 767px) {
+    .nav-item.contact-icon {
+        display: none;
+    }
+}
